@@ -8,17 +8,11 @@ import org.testng.annotations.Test;
 import pom.BaseClass;
 import pom.HomePage;
 
-public class HomePageTest {
+public class HomePageTest extends BaseClass {
 
 	
 
-	@BeforeTest
-	public void setUp() {
-		
-		BaseClass BC = new BaseClass();
-		BC.setUp();
-		//driver = BC.getWebDriver();
-	}
+
 	
 	@Test
 	public void checkHomePageItemsCount()
@@ -32,14 +26,5 @@ public class HomePageTest {
 	
 	
 	
-	
-	
-	
-
-	/*@AfterTest
-	public void tearDown() {
-		BaseClass.getWebDriver().close();
-
-	}*/
 	
 }

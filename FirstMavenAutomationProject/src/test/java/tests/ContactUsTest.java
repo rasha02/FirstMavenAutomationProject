@@ -11,16 +11,16 @@ import pom.BaseClass;
 import pom.ContactUsPage;
 import pom.HomePage;
 
-public class ContactUsTest {
+public class ContactUsTest extends BaseClass {
 
 
-	@BeforeTest
+	/*@BeforeTest
 	public void setUp() {
 		
 		BaseClass BC = new BaseClass();
 		BC.setUp();
 		//driver = BC.getWebDriver();
-	}
+	}*/
 	
 	@Test(priority =1)
 	public void testContactUs() throws InterruptedException
@@ -40,17 +40,11 @@ public class ContactUsTest {
 		//Thread.sleep(4000);
 		
 		assertEquals(CP.getMssg(), "Your message has been successfully sent to our team.");
-	
-	
-	
+		
 	}
 	
 	
 	
 	
-	/*@AfterTest
-	public void tearDown() {
-		BaseClass.getWebDriver().close();
-
-	}*/
+	
 }

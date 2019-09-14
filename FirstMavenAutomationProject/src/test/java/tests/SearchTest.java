@@ -10,15 +10,9 @@ import org.testng.annotations.Test;
 import pom.BaseClass;
 import pom.SearchClass;
 
-public class SearchTest {
+public class SearchTest extends BaseClass {
 
-	@BeforeTest
-	public void setUp() {
-		
-		BaseClass BC = new BaseClass();
-		BC.setUp();
-		//driver = BC.getWebDriver();
-	}
+
 	
 	
 	
@@ -42,12 +36,4 @@ public class SearchTest {
 	
 	
 	
-	
-	
-	
-	/*@AfterTest
-	public void tearDown() {
-		BaseClass.getWebDriver().close();
-
-	}*/
 }

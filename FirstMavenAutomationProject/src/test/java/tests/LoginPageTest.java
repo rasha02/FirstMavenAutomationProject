@@ -10,15 +10,9 @@ import pom.BaseClass;
 import pom.HomePage;
 import pom.LoginPage;
 
-public class LoginPageTest {
+public class LoginPageTest extends BaseClass {
 
-	@BeforeTest
-	public void setUp() {
-		
-		BaseClass BC = new BaseClass();
-		BC.setUp();
-		//driver = BC.getWebDriver();
-	}
+	
 
 	@Test(priority = 1)
 	public void testLoginMissingPassword() {
@@ -62,10 +56,6 @@ public class LoginPageTest {
 				"An account using this email address has already been registered. Please enter a valid password or request a new one.");
 	}*/
 
-	/*@AfterTest
-	public void tearDown() {
-		BaseClass.getWebDriver().close();
-
-	}*/
+	
 
 }
